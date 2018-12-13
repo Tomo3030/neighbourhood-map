@@ -38,6 +38,9 @@ const MyMapComponent = withGoogleMap(props => (
                         alt={result}
                         className={"infoImage"}
                       />
+                      <div className={"foursquare"}>
+                        Picture provided by FOURSQUARE
+                      </div>
                     </div>
                   ) : (
                     <div className="no-photo">...sorry no photo available</div>

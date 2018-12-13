@@ -107,6 +107,10 @@
   color: gray;
 }
 
+.foursquare {
+  font-size: 0.8em;
+}
+
 .loader {
   border: 16px solid whitesmoke;
   border-radius: 50%;
