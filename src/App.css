@@ -1,0 +1,151 @@
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  float: left;
+  width: 270px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow: scroll;
+  transition: 0.5s;
+}
+
+.map {
+  height: 100vh;
+  width: auto;
+  margin-left: 270px;
+  transition: 0.5s;
+}
+
+.sidebar-closed {
+  position: absolute;
+  height: 100vh;
+  margin: -270px;
+  transition: 0.5s;
+}
+
+.map-full {
+  margin: 0;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+.sidebar-list-item {
+  min-height: 80px;
+  border: 1px solid whitesmoke;
+}
+
+.sidebar-text {
+  margin: 8px 16px 8px 24px;
+}
+
+.item-header {
+  background: #b2dfdb;
+  padding: 20px 30px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border: 1px solid whitesmoke;
+  user-select: none;
+  cursor: pointer;
+}
+
+.down {
+  float: right;
+  user-select: none;
+}
+
+.up {
+  float: right;
+  transform: rotate(180deg);
+  user-select: none;
+}
+
+.sidebar-image-container {
+  display: inline-flex;
+  width: 40%;
+  margin: auto;
+  padding: 5px;
+}
+
+.sidebar-results {
+  padding-top: 3px;
+  margin-left: 5px;
+  font-weight: 100;
+  color: gray;
+  font-size: 0.9em;
+}
+
+.sidebar-location-title {
+  font-size: 1.2em;
+}
+
+.icon {
+  filter: opacity(50%);
+}
+
+.show-image {
+  float: right;
+  color: blue;
+  cursor: pointer;
+}
+
+.info-image {
+  display: block;
+  margin: auto;
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.no-photo {
+  font-size: 0.8em;
+  color: gray;
+}
+
+.loader {
+  border: 16px solid whitesmoke;
+  border-radius: 50%;
+  border-top: 16px solid #b2dfdb;
+  border-bottom: 16px solid #b2dfdb;
+  width: 85px;
+  height: 85px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburg {
+  margin: auto;
+  margin-top: 7px;
+}
+
+.hamburger-helper {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 60px;
+  background-color: #0c9;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+}
